@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta Interactiva</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<div class="contenedor">
+  <img src="marketing-san-valentin-1.jpg" alt="" class="imagen">
+  <div id="mensaje">
+    <h2>¡Hola! 😊</h2>
+    <p class="">Eres como un algoritmo perfecto en mi día,por eso hoy en tu cumpleaños, <br> ¿Quieres descubrir un piropo programático?</p>
+    <button onclick="mostrarPiropo()">¡Sí, por supuesto!</button>
+    <p id="piropo"></p>
+  </div>
+</div>
+
+  <script>
+    function mostrarPiropo() {
+      const piropos = [
+        "¡Eres el clic que mi corazón siempre espera! 🖱️❤️",
+        "En el código de mi vida, tú eres la función más especial. ¡Haz clic para descubrirlo!",
+        "Eres como un bucle infinito de felicidad en mi día. ¡Haz clic para ver más!",
+        "En el HTML de mi vida, tú eres la etiqueta más importante. ¡Haz clic y descúbrelo!",
+        "Eres la respuesta a mi función de búsqueda de la felicidad. ¡Haz clic y descubre por qué!",
+        "Eres la excepción a mi regla general de no enamorarme. 💖",
+        "Eres como el código perfecto, difícil de escribir pero imposible de olvidar. 💻😍",
+        "Eres la API de mi felicidad, siempre accediendo a mi corazón. 🚀",
+        "Si fueras un lenguaje de programación, serías el montaje del amor, directo al corazón. 🔧❤️",
+        "Eres el loop que nunca quiero romper. 🔄",
+        "Si fueras un error, serías un error 404: Not Found en mi vida. Pero afortunadamente, te encontré. 🌐",
+        "Eres mi función favorita en este programa llamado vida. 🌈",
+        "Feliz cumpleaños a la mujer que ilumina cada día de mi vida. Eres la mejor parte de mi mundo.",
+"En tu cumpleaños, celebro a la persona más increíble que he tenido el privilegio de conocer. ¡Eres mi mayor bendición!",
+"Para la dueña de mi corazón en su día especial. Eres mi todo y más. ¡Feliz cumpleaños, amor!",
+"En tu cumpleaños, quiero recordarte cuánto te amo y lo agradecido que estoy por tenerte en mi vida. Eres la mejor parte de mí.",
+"Hoy celebramos el regalo más valioso que la vida me ha dado: tú. ¡Feliz cumpleaños, mi amor eterno!",
+"Eres la razón por la que cada día es más brillante. En tu cumpleaños, te deseo amor, alegría y momentos tan especiales como tú.",
+"Feliz cumpleaños a la persona que convierte lo ordinario en extraordinario. Gracias por ser mi inspiración y mi felicidad constante.",
+"En este día especial, quiero agradecerte por cada sonrisa, por cada momento compartido y por ser la razón de mi felicidad. ¡Feliz cumpleaños, mi amor!",
+"Eres mi sol en los días nublados y mi estrella en la oscuridad. Que este día te traiga la felicidad que mereces. ¡Feliz cumpleaños, mi amor!",
+"En tu cumpleaños, quiero desearte un día tan lleno de amor y alegría como el que tú traes a mi vida. ¡Eres simplemente la mejor!"
+      ];
+
+      const piropoAleatorio = piropos[Math.floor(Math.random() * piropos.length)];
+
+      const piropoElement = document.getElementById("piropo");
+      piropoElement.textContent = piropoAleatorio;
+      piropoElement.style.display = "block";
+    }
+  </script>
+  
+</body>
+</html>
